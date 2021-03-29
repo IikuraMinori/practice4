@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="{{url_for('top')}}" method="get">
+        <h2>給料計算</h2>
+        時間：<input type="text" name="time"><br>
+        お金: <input type="text" name="money"><br>
+        <input type="submit" value="計算">
+    </form>
+
+    <form action="{{url_for('top2')}}" method="get">
+        <h2>円の計算</h2>
+        半径: <input type="text" name="r"><br>
+        <input type="submit" value="計算">
+    </form>
+</body>
+</html>
